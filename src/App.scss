@@ -158,3 +158,17 @@ body {
     width: 100%;
   }
 }
+
+/** MENU STYLING **/
+
+.Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -3rem;
+  li {
+    display: inline;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+  }
+}
