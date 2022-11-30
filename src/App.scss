@@ -85,7 +85,9 @@ select {
   --neutral-dark-blue: hsl(240, 100%, 5%);
 
   /** TYPOGRAPHY **/
-  --font-size: 15px;
+  --font-size-base: 15px;
+  --font-size-large: 2.5rem;
+  --font-size-largest: 4rem;
   --main-font: "Inter", sans-serif;
   --fw-base: 400;
   --fw-bold: 700;
@@ -93,11 +95,12 @@ select {
 
   /** SPACING **/
   --padding-m: 1.5rem;
+  --padding-s: 0.8rem;
 }
 
 body {
   font-family: var(--main-font);
-  font-size: var(--font-size);
+  font-size: var(--font-size-base);
   font-weight: var(--fw-base);
   background-color: var(--neutral-off-white);
   color: var(--neutral-darker-gray);
@@ -114,18 +117,49 @@ body {
 .text-white {
   color: var(--neutral-off-white);
 }
+
+.text-lighter-gray {
+  color: var(--neutral-lighter-gray);
+}
 .bg-dark {
   background-color: var(--neutral-dark-blue);
+}
+
+.bg-red {
+  background-color: var(--primary-red);
 }
 
 .padding-medium {
   padding: var(--padding-m);
 }
 
+.padding-block-m {
+  padding-block: var(--padding-m);
+}
+
+.largest-text {
+  font-size: var(--font-size-largest);
+}
+
+.large-text {
+  font-size: var(--font-size-large);
+}
+
+.button {
+  border: none;
+  padding: 1rem 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.bold-text {
+  font-weight: var(--fw-bold);
+}
+
 /** BLOCK CLASSES **/
 .section {
   margin: 6rem;
 }
+
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -138,8 +172,17 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 
+  .headline-content-grid {
+    display: grid;
+    align-content: space-between;
+  }
+
   img {
     grid-column: span 2;
+  }
+
+  h1 {
+    line-height: 1;
   }
 }
 
@@ -147,15 +190,21 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1.5rem;
+
+  .article-preview-content {
+    display: grid;
+    align-content: space-between;
+  }
 }
 .new-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr 1fr 1fr;
   height: 100%;
 
-  hr {
-    height: 1%;
-    width: 100%;
+  .new-item[data-item-type="middle-item"] {
+    border-top: solid var(--neutral-lighter-gray) 1px;
+    border-bottom: solid var(--neutral-lighter-gray) 1px;
   }
 }
 

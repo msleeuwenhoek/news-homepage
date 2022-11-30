@@ -5,9 +5,11 @@ export default function popularSection({ img, position, header, txt }) {
     <div>
       <div className="article-preview-grid">
         <img src={require(`../images/${img}`)} />
-        <div>
-          <div>{position}</div>
-          <h4 className="text-dark">{header}</h4>
+        <div className="article-preview-content">
+          <div className="large-text bold-text text-lighter-gray">
+            {position}
+          </div>
+          <h3 className="text-dark ">{header}</h3>
           <p>{txt}</p>
         </div>
       </div>

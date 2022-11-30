@@ -16,21 +16,20 @@ function App() {
         <ArticlePreview
           img="image-retro-pcs.jpg"
           position="01"
-          header="Hydrogen VS Electric Cars"
-          txt="Will hydrogen-fueled cars ever catch up to EVs?"
+          header="Reviving Retro PCs"
+          txt="What happens when old PCs are given modern upgrades?"
         />
         <ArticlePreview
           img="image-top-laptops.jpg"
           position="02"
-          header="The Downsides of AI Artistry"
-          txt="What are the possible adverse effects of on-demand AI image generation?"
+          header="Top 10 Laptops of 2022"
+          txt="Our best picks for various needs and budgets."
         />
         <ArticlePreview
           img="image-gaming-growth.jpg"
           position="03"
-          header="Is VC Funding Drying Up?"
-          txt="Private funding by VC firms is down 50% YOY. We take a look at what that
-          means."
+          header="The Growth of Gaming"
+          txt="How the pandemic has sparked fresh opportunities."
         />
       </div>
     </div>
