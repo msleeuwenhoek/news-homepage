@@ -5,7 +5,7 @@ export default function headlineSection() {
     <div className="HeadlineSection">
       <img src={require("../images/image-web-3-desktop.jpg")} />
       <div>
-        <h1>The Bright Future of Web 3.0?</h1>
+        <h1 className="text-dark">The Bright Future of Web 3.0?</h1>
       </div>
       <div>
         <p>

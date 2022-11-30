@@ -21,8 +21,10 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
-ol[role="list"] {
+ol[role="list"],
+ul {
   list-style: none;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -96,4 +98,19 @@ body {
   font-weight: var(--fw-base);
   background-color: var(--neutral-off-white);
   color: var(--neutral-darker-gray);
+}
+/** UTILITY CLASSES **/
+.text-dark {
+  color: var(--neutral-dark-blue);
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+.text-white {
+  color: var(--neutral-off-white);
+}
+.bg-dark {
+  background-color: var(--neutral-dark-blue);
 }
