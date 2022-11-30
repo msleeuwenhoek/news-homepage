@@ -2,7 +2,7 @@ import React from "react";
 
 export default function headlineSection() {
   return (
-    <div className="HeadlineSection">
+    <div className="HeadlineSection headline-grid">
       <img src={require("../images/image-web-3-desktop.jpg")} />
       <div>
         <h1 className="text-dark">The Bright Future of Web 3.0?</h1>
