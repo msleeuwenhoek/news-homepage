@@ -4,7 +4,13 @@ export default function popularSection({ img, position, header, txt }) {
   return (
     <div>
       <div className="article-preview-grid">
-        <img src={require(`../images/${img}`)} />
+        <div
+          style={{
+            backgroundImage: `url(${require(`../images/${img}`)})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
         <div className="article-preview-content">
           <div className="large-text bold-text text-lighter-gray">
             {position}
